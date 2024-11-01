@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/accordion",
+  "version": "0.1.0",
+  "title": "Accordion",
+  "category": "universal-blocks",
+  "icon": "smiley",
+  "description": "Create collapsible sections for your content, perfect for FAQs and more.",
+  "textdomain": "accordion",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

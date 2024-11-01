@@ -1,0 +1,115 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/alert",
+  "version": "0.1.0",
+  "title": "Alert",
+  "category": "universal-blocks",
+  "icon": "warning",
+  "description": "Easily add attention-grabbing alerts to your content with customizable messages and styles.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "alertText": {
+      "type": "string",
+      "source": "html",
+      "selector": "p.alert-text",
+      "default": "Alert here"
+    },
+    "description": {
+      "type": "string",
+      "source": "html",
+      "selector": "p.alert-description",
+      "default": "A short description followed by two action items.."
+    },
+    "learnMoreLink": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a.learn-more-link",
+      "attribute": "href",
+      "default": "#"
+    },
+    "learnMoreText": {
+      "type": "string",
+      "source": "html",
+      "selector": "a.learn-more-link",
+      "default": "Learn More"
+    },
+    "svgPath1": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "svg path.svg-path-1",
+      "attribute": "d",
+      "default": "M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm-4,48a12,12,0,1,1-12,12A12,12,0,0,1,124,72Zm12,112a16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40a8,8,0,0,1,0,16Z"
+    },
+    "svgPath2": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "svg path.svg-path-2",
+      "attribute": "d",
+      "default": "M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"
+    },
+    "closeButtonPath": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "svg path.close-button-path",
+      "attribute": "d",
+      "default": "M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "borderColor": {
+      "type": "string"
+    },
+    "fontSize": {
+      "type": "number"
+    },
+    "padding": {
+      "type": "object",
+      "default": {
+        "top": "10px",
+        "right": "10px",
+        "bottom": "10px",
+        "left": "10px"
+      }
+    },
+    "margin": {
+      "type": "object",
+      "default": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      }
+    },
+    "borderRadius": {
+      "type": "object",
+      "default": {
+        "topLeft": "0px",
+        "topRight": "0px",
+        "bottomRight": "0px",
+        "bottomLeft": "0px"
+      }
+    },
+    "border": {
+      "type": "object",
+      "default": {
+        "top": "1px",
+        "right": "1px",
+        "bottom": "1px",
+        "left": "1px"
+      }
+    }
+  },
+  "textdomain": "alert",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

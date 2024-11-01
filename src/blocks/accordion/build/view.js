@@ -1,0 +1,1 @@
+window.addEventListener("load",(()=>{const t=document.querySelectorAll(".accordion-item");t.forEach((e=>{e.addEventListener("click",(()=>{t.forEach((t=>{t!==e&&t.classList.contains("active")&&(t.classList.remove("active"),t.querySelector(".icon").textContent="+")})),e.classList.toggle("active");const c=e.querySelector(".icon");c.textContent="+"===c.textContent?"-":"+"}))}))}));

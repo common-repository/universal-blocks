@@ -1,0 +1,19 @@
+{
+  "name": "wpplugins/universal-blocks",
+  "description": "Emphasize that your plugin offers blocks for any kind of content or design need.",
+  "type": "wordpress-plugin",
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "Al Imran Akash",
+      "email": "alimranakash.bd@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "WPPlugins\\UniversalBlocks\\": "app/"
+    },
+    "files": [ "inc/functions.php" ]
+  }
+}

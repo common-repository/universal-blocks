@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelector(".wppub-alert button");e.addEventListener("click",(()=>{const t=e.closest(".wppub-alert");t&&t.remove()}))}));
